@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image optimisation, web performance and Lighthouse</title>
+  </head>
+  <body>
+    <h1>srcSet for the win</h1>
+    <img
+      srcset="
+        ./img/1920x1080.jpg 1920w,
+        ./img/1024x768.jpg  1919w,
+        ./img/960x640.jpg   1023w,
+        ./img/640x480.jpg    959w,
+        ./img/412x915.jpg    639w,
+        ./img/375x667.jpg    411w
+      "
+      src="./img/1920x1080.jpg"
+      alt="buildings"
+    />
+
+    <img
+      src="img/lighthouse-8578318_1280.jpg"
+      alt="Lighthouse"
+      width="800px"
+      height="450"
+    />
+  </body>
+</html>
